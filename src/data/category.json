@@ -1,0 +1,212 @@
+{
+    "category_detail": [
+        {
+            "id": 1,
+            "slug": "cake",
+            "categoryname": "Cake",
+            "subcategories": [
+                {
+                    "subcategoryname": "Layer Cake",
+                    "subcategorysubpart": ["Chocolate Cake", "Vanilla Cake", "Red Velvet Cake", "Black Forest Cake", "Carrot Cake", "Marble Cake", "Lemon Cake", "Funfetti Cake", "Devil’s Food Cake", "Angel Food Cake"]
+                },
+                {
+                    "subcategoryname": "Sponge Cake",
+                    "subcategorysubpart": ["Genoise Cake", "Victoria Sponge", "Chiffon Cake", "Yule Log (Bûche de Noël)", "Castella Cake", "Sponge Sheet Cake"]
+                },
+                {
+                    "subcategoryname": "Cheesecake",
+                    "subcategorysubpart": ["Classic New York Cheesecake", "No-Bake Cheesecake", "Japanese Cheesecake", "Ricotta Cheesecake", "Chocolate Cheesecake", "Berry Cheesecake", "Pumpkin Cheesecake"]
+                },
+                {
+                    "subcategoryname": "Cupcakes",
+                    "subcategorysubpart": ["Chocolate Cupcakes", "Vanilla Cupcakes", "Red Velvet Cupcakes", "Carrot Cupcakes", "Lemon Cupcakes", "Mini Cheesecakes"]
+                },
+                {
+                    "subcategoryname": "Fruit Cake",
+                    "subcategorysubpart": ["Traditional Fruitcake", "Pineapple Upside-Down Cake", "Apple Cake", "Banana Cake", "Cranberry Cake", "Fig Cake", "Plum Cake", "Strawberry Cake"]
+                },
+                {
+                    "subcategoryname": "Speciality and International Cake",
+                    "subcategorysubpart": ["Tres Leches Cake", "Tiramisu", "Mille-feuille", "Opera Cake", "Baklava Cake", "Panettone", "Lamingtons", "Basque Burnt Cheesecake", "Dacquoise", "Dobos Torte"]
+                },
+                {
+                    "subcategoryname": "Ice Cream Cake",
+                    "subcategorysubpart": ["Classic Ice Cream Cake", "Brownie Ice Cream Cake", "Oreo Ice Cream Cake", "Chocolate Ice Cream Cake", "Strawberry Ice Cream Cake"]
+                },
+                {
+                    "subcategoryname": "Moose Cake",
+                    "subcategorysubpart": ["Chocolate Mousse Cake", "Raspberry Mousse Cake", "White Chocolate Mousse Cake", "Coffee Mousse Cake", "Triple Chocolate Mousse Cake"]
+                },
+                {
+                    "subcategoryname": "Frosting and Glazed Cake",
+                    "subcategorysubpart": ["Buttercream Frosting Cake", "Ganache Cake", "Cream Cheese Frosting Cake", "Glazed Lemon Cake", "Chocolate Glazed Cake"]
+                },
+                {
+                    "subcategoryname": "Roll Cake",
+                    "subcategorysubpart": ["Swiss Roll", "Pumpkin Roll", "Chocolate Roll Cake", "Strawberry Roll Cake", "Matcha Roll Cake"]
+                },
+                {
+                    "subcategoryname": "Nut Based Cake",
+                    "subcategorysubpart": ["Almond Cake", "Pecan Cake", "Hazelnut Cake", "Walnut Cake", "Chestnut Cake"]
+                }
+            ],
+            "image": "/categoryimage/cakecategory.png"
+        },
+        {
+            "id": 2,
+            "slug": "pastry",
+            "categoryname": "Pastry",
+            "subcategories": [
+                {
+                    "subcategoryname": "Flavored Pastry",
+                    "subcategorysubpart": ["Chocolate Pastry", "Vanilla Pastry", "Strawberry Pastry", "Mango Pastry", "Pineapple Pastry", "Black Forest Pastry", "White Forest Pastry", "Butterscotch Pastry", "Coffee Pastry", "Red Velvet Pastry", "Chocolate Almond Pastry", "Blueberry Pastry", "Raspberry Pastry", "Orange Pastry", "Lemon Pastry"]
+                },
+                {
+                    "subcategoryname": "Eclair Pastry",
+                    "subcategorysubpart": ["Classic Chocolate Éclair", "Vanilla Éclair", "Coffee Éclair", "Caramel Éclair", "Strawberry Éclair", "Pistachio Éclair", "Hazelnut Éclair", "Nutella Éclair", "Red Velvet Éclair"]
+                }
+            ],
+            "image": "/categoryimage/pastrycategory.png"
+        },
+        {
+            "id": 3,
+            "slug": "rusk",
+            "categoryname": "Rusk",
+            "subcategories" :[
+                {
+                    "subcategoryname": "Rusk",
+                    "subcategorysubpart": ["Plain Rusk", "Milk Rusk", "Suji Rusk", "Whole Wheat Rusk", "Elaichi Rusk", "Butter Rusk", "Cake Rusk", "Jeera Rusk", "Masala Rusk", "Fruit Rusk"]
+                }
+            ],
+            "image": "/categoryimage/ruskcategory.png"
+        },
+        {
+            "id": 4,
+            "slug": "bread",
+            "categoryname": "Bread",
+            "subcategories": [
+                {
+                    "subcategoryname": "Bread",
+                    "subcategorysubpart": ["White Bread", "Whole Wheat Bread", "Multigrain Bread", "Sourdough Bread", "Rye Bread", "Baguette", "Ciabatta", "Focaccia", "Bagel", "Paneer Bread"]
+                }
+            ],
+            "image": "/categoryimage/breadcategory.png"
+        },
+        {
+            "id": 5,
+            "slug": "pizza",
+            "categoryname": "Pizza",
+            "subcategories": [
+                {
+                    "subcategoryname": "Pizza",
+                    "subcategorysubpart": ["Margherita Pizza", "Pepperoni Pizza", "Cheese Pizza", "Vegetarian Pizza", "Meat Lover’s Pizza", "Four Cheese Pizza", "BBQ Chicken Pizza", "Pesto Pizza", "Mexican Pizza", "Smoked Salmon Pizza"]
+                }
+            ],
+            "image": "/categoryimage/pizzacategory.png"
+        },
+        {
+            "id": 6,
+            "slug": "cookies-and-biscuits",
+            "categoryname": "Cookies and Biscuits",
+            "subcategories": [
+                {
+                    "subcategoryname": "Cookies",
+                    "subcategorysubpart": ["Chocolate Chip Cookies", "Double Chocolate Cookies", "Oatmeal Raisin Cookies", "Peanut Butter Cookies", "Gingerbread Cookies", "Molasses Cookies", "Biscotti", "Chocolate Crinkle Cookies", "Almond Cookies", "Butter Cookies", "Brownie Cookies"]
+                },
+                {
+                    "subcategoryname": "Biscuits",
+                    "subcategorysubpart": ["Digestive Biscuits", "Marie Biscuits", "Rich Tea Biscuits", "Cream Biscuits", "Butter Biscuits", "Bourbon Biscuits", "Cashew Biscuits", "Jeera Biscuits", "Arrowroot Biscuits", "Milk Biscuits", "Parle-G Biscuits"]
+                }
+            ],
+            "image": "/categoryimage/cookies.png"
+        },
+        {
+            "id": 7,
+            "slug": "pies-and-tarts",
+            "categoryname": "Pies and Tarts",
+            "subcategories": [
+                {
+                    "subcategoryname": "Pies",
+                    "subcategorysubpart": ["Apple Pie", "Cherry Pie", "Pumpkin Pie", "Pecan Pie", "Blueberry Pie", "Banana Cream Pie", "Chocolate Cream Pie", "Custard Pie"]
+                },
+                {
+                    "subcategoryname": "Tarts",
+                    "subcategorysubpart": ["Fruit Tart", "Lemon Tart", "Chocolate Tart", "Pecan Tart", "Raspberry Tart", "Apricot Tart", "Strawberry Tart", "Custard Tart", "Almond Tart", "Chocolate Caramel Tart"]
+                }
+            ],
+            "image": "/categoryimage/piecategory.png"
+        },
+        {
+            "id": 8,
+            "slug": "muffins",
+            "categoryname": "Muffins",
+            "subcategories": [
+                {
+                    "subcategoryname": "Muffins",
+                    "subcategorysubpart": ["Blueberry Muffins", "Chocolate Chip Muffins", "Banana Nut Muffins", "Lemon Poppy Seed Muffins", "Pumpkin Muffins", "Apple Cinnamon Muffins", "Chocolate Muffins", "Raspberry Muffins", "Strawberry Muffins", "Almond Muffins", "Cherry Muffins"]
+                }
+            ],
+            "image": "/categoryimage/muffincategory.png"
+        },
+        {
+            "id": 9,
+            "slug": "doughnuts",
+            "categoryname": "Doughnuts",
+            "subcategories": [
+                {
+                    "subcategoryname": "Doughnuts",
+                    "subcategorysubpart": ["Caramel Doughnuts", "Doughnut Sandwiches", "Red Velvet Doughnuts", "Eclairs", "Sour Cream Doughnuts", "Lemon Filled Doughnuts", "Apple Cider Doughnuts", "Maple Glazed Doughnuts", "Cinnamon Sugar Doughnuts", "Powdered Sugar Doughnuts", "Cream-Filled Doughnuts", "Custard-Filled Doughnuts", "Chocolate Glazed Doughnuts"]
+                }
+            ],
+            "image": "/categoryimage/doughnutcategory.png"
+        },
+        {
+            "id": 10,
+            "slug": "savory-baked-goods",
+            "categoryname": "Savory Baked Goods",
+            "subcategories": [
+                {
+                    "subcategoryname": "Savory Baked Goods",
+                    "subcategorysubpart": ["Quiche", "Savoury Scones", "Cheese Bread", "Veg Burger", "Non-veg Burger", "Cheese Burger", "Samosas", "Patties", "Cream Roll", "Chocolate Roll", "Cornbread"]
+                }
+            ],
+            "image": "/categoryimage/burgercategory.png"
+        },
+        {
+            "id": 11,
+            "slug": "beverages",
+            "categoryname": "Beverages",
+            "subcategories": [
+                {
+                    "subcategoryname": "Coffee",
+                    "subcategorysubpart": ["Espresso", "Americano", "Cappuccino", "Latte", "Mocha", "Flat White", "Cold Brew", "Iced Coffee"]
+                },
+                {
+                    "subcategoryname": "Tea",
+                    "subcategorysubpart": ["Black Tea", "Green Tea", "Milk Tea", "Oolong Tea"]
+                },
+                {
+                    "subcategoryname": "Milkshake",
+                    "subcategorysubpart": ["Hot Chocolate", "Vanilla Milkshake", "Chocolate Milkshake", "Strawberry Milkshake", "Banana Milkshake", "Caramel Milkshake", "Coffee Milkshake", "Mint Chocolate Chip Milkshake", "Cookies and Cream Milkshake", "Peanut Butter Milkshake", "Red Velvet Milkshake", "Nutella Milkshake", "Mango Milkshake", "Blueberry Milkshake", "Raspberry Milkshake", "Pineapple Milkshake", "Mixed Berry Milkshake", "Kiwi Milkshake", "Oreo Milkshake", "Brownie Batter Milkshake", "Cheesecake Milkshake", "Apple Pie Milkshake", "Key Lime Pie Milkshake", "Pecan Pie Milkshake", "Bourbon Caramel Milkshake"]
+                }
+            ],
+            "image": "/categoryimage/beveragecategory.png"
+        },
+        {
+            "id": 12,
+            "slug": "sweets",
+            "categoryname": "Sweets",
+            "subcategories": [
+                {
+                    "subcategoryname": "Indian Sweets",
+                    "subcategorysubpart": ["Gulab Jamun", "Jalebi", "Rasgulla", "Rasmalai", "Barfi", "Kaju Katli", "Ladoo", "Halwa", "Peda", "Soan Papdi", "Kheer", "Kalakand", "Mawa Cake", "Dhokla"]
+                },
+                {
+                    "subcategoryname": "International Sweets",
+                    "subcategorysubpart": ["Baklava", "Brownies", "Candies", "Chocolate", "Chocolate Pudding", "Mango Pudding", "Turkish Delight"]
+                }
+            ],
+            "image": "/categoryimage/sweetscategory.png"
+        }
+    ]
+}
