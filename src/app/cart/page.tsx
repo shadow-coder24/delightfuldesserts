@@ -1,6 +1,7 @@
 "use client";
 import React, { useContext, useEffect, useState } from "react";
 import cartContext from "../../context/cartcontext";
+import { CartItem } from "@/type/cart";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,13 +21,15 @@ function Cart() {
 
   const [showOrderPlaced, setShowOrderPlaced] = useState(false);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const calculatePrices = () => {
     let pricesum = 0;
     let quantitysum = 0;
   
     Object.keys(cart).forEach((product) => {
-      pricesum += cart[product].productprice * cart[product].quantity;
-      quantitysum += cart[product].quantity;
+      const item: CartItem = cart[product];
+      pricesum += item.productprice * item.quantity;
+      quantitysum += item.quantity;
     });
   
     const shipping = Math.ceil(pricesum / 100);
@@ -46,7 +49,7 @@ function Cart() {
     setShippingCharge(shipping);
     setGst(tax);
     setFinalPrice(lastprice);
-  }, [cart]);
+  }, [calculatePrices, cart]);
 
 
 
