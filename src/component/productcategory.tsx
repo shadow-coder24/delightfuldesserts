@@ -6,23 +6,23 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { Addtocartbutton } from "./addtocartbutton";
 
 export function Productcategory() {
-  const sliderRefs = useRef([]);
+  const sliderRefs = useRef<(HTMLUListElement | null)[]>([]);
 
-  const slideLeft = (index) => {
+  const slideLeft = (index: number) => {
     const slider = sliderRefs.current[index];
     if (slider) {
       slider.scrollBy({ left: -200, behavior: "smooth" });
     }
   };
 
-  const slideRight = (index) => {
+  const slideRight = (index: number) => {
     const slider = sliderRefs.current[index];
     if (slider) {
       slider.scrollBy({ left: 200, behavior: "smooth" });
     }
   };
 
-  const getRandomProducts = (subcategoryId) => {
+  const getRandomProducts = (subcategoryId: number) => {
     const subcategory = subcategorydata.subcategory_detail.find(
       (item) => item.id === subcategoryId
     );
