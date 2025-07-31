@@ -8,9 +8,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Addtocartbutton } from "@/component/addtocartbutton";
 
+type OrderPlacedProps = {
+  setQuantity: React.Dispatch<React.SetStateAction<number>>;
+  setShowOrderPlaced: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
 function Cart() {
-  const { cart } =
-    useContext(cartContext);
+  const { cart } = useContext(cartContext);
 
   const [totalprice, setTotalPrice] = useState(0);
 
@@ -25,25 +29,23 @@ function Cart() {
   const calculatePrices = () => {
     let pricesum = 0;
     let quantitysum = 0;
-  
+
     Object.keys(cart).forEach((product) => {
       const item: CartItem = cart[product];
       pricesum += item.productprice * item.quantity;
       quantitysum += item.quantity;
     });
-  
+
     const shipping = Math.ceil(pricesum / 100);
     const tax = Math.ceil((pricesum / 100) * 5);
     const lastprice = pricesum + shipping + tax;
-  
+
     return { pricesum, quantitysum, shipping, tax, lastprice };
   };
 
-  
-  
-  
   useEffect(() => {
-    const { pricesum, quantitysum, shipping, tax, lastprice } = calculatePrices();
+    const { pricesum, quantitysum, shipping, tax, lastprice } =
+      calculatePrices();
     setTotalPrice(pricesum);
     setQuantity(quantitysum);
     setShippingCharge(shipping);
@@ -51,18 +53,16 @@ function Cart() {
     setFinalPrice(lastprice);
   }, [calculatePrices, cart]);
 
-
-
-
-
-  const OrderPlaced = ({ setQuantity, setShowOrderPlaced }) => {
+  const OrderPlaced = ({
+    setQuantity,
+    setShowOrderPlaced,
+  }: OrderPlacedProps) => {
     const { clearCart } = useContext(cartContext);
 
     const handleOrderComplete = () => {
       setQuantity(0); // Reset quantity in the UI
       setShowOrderPlaced(false); // Hide the modal and remove blur
     };
-    
 
     return (
       <div className="fixed inset-0 flex justify-center items-center bg-transparent z-50">
@@ -146,7 +146,9 @@ function Cart() {
                     <span className="text-browndark text-lg pt-[5px]">
                       ₹.{cart[product].productprice}
                     </span>
-                    <div className="pr-[30px] pt-[10px]"><Addtocartbutton product={cart[product]} /></div>
+                    <div className="pr-[30px] pt-[10px]">
+                      <Addtocartbutton product={cart[product]} />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -190,7 +192,12 @@ function Cart() {
           </div>
         </div>
       </div>
-      {showOrderPlaced && <OrderPlaced setQuantity={setQuantity} setShowOrderPlaced={undefined} />}
+      {showOrderPlaced && (
+        <OrderPlaced
+          setQuantity={setQuantity}
+          setShowOrderPlaced={setShowOrderPlaced}
+        />
+      )}
     </div>
   );
 }
