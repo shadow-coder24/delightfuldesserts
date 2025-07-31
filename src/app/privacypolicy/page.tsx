@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PrivacyPolicy(props) {
+export default function PrivacyPolicy() {
   return (
     <div className="bg-pinksoft">
       <div className="bg-pinkpale text-browndark font-extrabold text-4xl pt-5 text-center pb-5">

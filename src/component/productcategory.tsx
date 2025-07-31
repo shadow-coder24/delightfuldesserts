@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef } from "react";
 import subcategorydata from "../data/subcategory.json";
-import Image from "next/image";
 import Link from "next/link";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { Addtocartbutton } from "./addtocartbutton";

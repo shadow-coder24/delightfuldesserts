@@ -1,5 +1,5 @@
 "use client";
-import type { Metadata } from "next";
+
 import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/component/navbar";
@@ -37,7 +37,6 @@ export default function RootLayout({
     productname: string;
     productimage: string;
     productprice: number;
-    [key: string]: any; // For additional properties
   };
   const [cart, setCart] = useState({});
 

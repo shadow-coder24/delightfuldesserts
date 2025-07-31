@@ -4,10 +4,12 @@ import { createContext } from "react"
 const cartContext = createContext({
 
     cart: {},
-    addtocart: (product: any)=>{},
-    removefromcart: (product: any)=>{},
-    totalQuantity: ()=>{},
-    clearCart: ()=>{}
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    addtocart: (_product: unknown) => {},
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    removefromcart: (product: unknown) => {},
+    totalQuantity: () => {},
+    clearCart: () => {}
 })
 
 export default cartContext;

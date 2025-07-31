@@ -8,7 +8,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Addtocartbutton } from "@/component/addtocartbutton";
 
 function Cart() {
-  const { cart, totalQuantity, clearCart, addtocart, removefromcart } =
+  const { cart } =
     useContext(cartContext);
 
   const [totalprice, setTotalPrice] = useState(0);
@@ -187,7 +187,7 @@ function Cart() {
           </div>
         </div>
       </div>
-      {showOrderPlaced && <OrderPlaced setQuantity={setQuantity} />}
+      {showOrderPlaced && <OrderPlaced setQuantity={setQuantity} setShowOrderPlaced={undefined} />}
     </div>
   );
 }
