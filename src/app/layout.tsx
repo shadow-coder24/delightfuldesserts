@@ -4,12 +4,12 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/component/navbar";
 import cartContext from "@/context/cartcontext";
+import { Cart, CartItem } from "@/type/cart";
 import { useEffect, useState } from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { Footer } from "@/component/footer";
 config.autoAddCss = false;
-
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,13 +32,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  type Product = {
-    productid: number;
-    productname: string;
-    productimage: string;
-    productprice: number;
-  };
-  const [cart, setCart] = useState({});
+  
+  const [cart, setCart] = useState<Cart>({});
 
   useEffect(() => {
     const savedCart = localStorage.getItem("cart");
@@ -47,36 +42,37 @@ export default function RootLayout({
     }
   }, []);
 
-  const addtocart = (product: Product) => {
+  const addtocart = (product: CartItem): object => {
     const newCart = { ...cart };
 
     if (!newCart[product.productid]) {
-      // If product doesn't exist in cart, add it with initial quantity of 1
       newCart[product.productid] = { ...product, quantity: 1 };
     } else {
-      // If product exists, only update the quantity
       newCart[product.productid].quantity += 1;
     }
+
     setCart(newCart);
     localStorage.setItem("cart", JSON.stringify(newCart));
-    console.log(product);
+    return {}; // To match the return type in context
   };
 
-  const removefromcart = (product: Product) => {
+  const removefromcart = (product: CartItem): object => {
     const newCart = { ...cart };
-    if (!newCart[product.productid]) return;
+    if (!newCart[product.productid]) return {};
+
     newCart[product.productid].quantity -= 1;
+
     if (newCart[product.productid].quantity <= 0) {
       delete newCart[product.productid];
     }
+
     setCart(newCart);
     localStorage.setItem("cart", JSON.stringify(newCart));
+    return {};
   };
 
-  const totalQuantity = Object.values(cart).reduce(
-    (sum, product) => sum + (product.quantity || 0),
-    0
-  );
+  const totalQuantity = (): number =>
+    Object.values(cart).reduce((sum, product) => sum + product.quantity, 0);
 
   const clearCart = () => {
     setCart({});

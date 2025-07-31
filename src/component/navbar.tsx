@@ -145,7 +145,7 @@ export function Navbar() {
                 className="absolute -top-2 text-browndark rounded-full text-center bg-yellowmuted w-7 h-7 font-bold flex items-center justify-center -right-[2px]"
                 style={{ zIndex: 10 }}
               >
-                {totalQuantity}
+                {totalQuantity()}
               </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

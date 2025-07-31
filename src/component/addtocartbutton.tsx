@@ -19,11 +19,11 @@ export const Addtocartbutton = memo(({ product }: Props) => {
   const { cart, addtocart, removefromcart } = useContext(cartContext);
 
   const increase = () => {
-    addtocart(product);
+    addtocart({ ...product, quantity: 1 });
   };
 
   const decrease = () => {
-    removefromcart(product);
+    removefromcart({ ...product, quantity: 1 });
   };
 
   const quantity = cart[product.productid]?.quantity || 0;
