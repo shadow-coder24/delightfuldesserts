@@ -12,6 +12,7 @@ interface Subproduct {
     productdescription: string;
     productprice: number;
     productimage: Image;
+    sub: Subcategory
 }
 
 interface Product {
